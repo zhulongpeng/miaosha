@@ -7,4 +7,7 @@ public interface StockService {
     Stock getStockById(int sid);
 
     int updateStockById(Stock stock);
+
+    int updateStockByOptimistic(Stock stock);
+
 }

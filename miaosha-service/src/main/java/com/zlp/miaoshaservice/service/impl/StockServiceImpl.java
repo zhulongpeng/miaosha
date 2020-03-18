@@ -21,4 +21,9 @@ public class StockServiceImpl implements StockService {
     public int updateStockById(Stock stock) {
         return stockMapper.updateByPrimaryKeySelective(stock);
     }
+
+    @Override
+    public int updateStockByOptimistic(Stock stock) {
+        return stockMapper.updateByOptimistic(stock);
+    }
 }
